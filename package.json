@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "skill test",
+  "main": "./src/main.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheJuanAndOnly99/test"
+  },
+  "author": "TheJuanAndOnly99",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.22.5",
+    "typescript": "^5.1.6"
+  }
+}
