@@ -11,6 +11,10 @@ export class Team {
 		return this.players;
 	}
 
+	getTeamName() {
+		return this.name;
+	}
+
 	addPlayer(player: Player) {
 		this.players.push(player);
 	}

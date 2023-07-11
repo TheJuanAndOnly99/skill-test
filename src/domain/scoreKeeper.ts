@@ -1,6 +1,6 @@
 export class ScoreKeeper {
-	private scoreTeamA: number;
-	private scoreTeamB: number;
+	public scoreTeamA: number;
+	public scoreTeamB: number;
 
 	constructor() {
 		this.scoreTeamA = 0;
