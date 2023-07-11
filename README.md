@@ -1,4 +1,4 @@
-![example workflow](https://github.com/thejuanandonly99/test/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/thejuanandonly99/test/actions/workflows/pipeline.yml/badge.svg)
 
 ## Getting Started
 
