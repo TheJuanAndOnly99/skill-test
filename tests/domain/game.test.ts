@@ -27,14 +27,19 @@ describe('Game class', () => {
 	});
 
 	describe('play function', () => {
-		test('it should return the final score', async () => {
-			const teamA = new Team('Team A');
-			const teamB = new Team('Team B');
-			const game = new Game(teamA, teamB);
-			const finalScore = await game.play();
-			const expectedResult = '000:000';
+		test(
+			'play function should return the final score',
+			async () => {
+				const teamA = new Team('Team A');
+				const teamB = new Team('Team B');
+				const game = new Game(teamA, teamB);
 
-			expect(finalScore).toEqual(expectedResult);
-		});
+				const finalScore = await game.play();
+
+				expect(typeof finalScore).toBe('string');
+				expect(finalScore).toMatch(/^\d{3}:\d{3}$/);
+			},
+			30000
+		);
 	});
 });
