@@ -5,7 +5,8 @@ describe('Player class', () => {
 		test('it should create a new player', () => {
 			const player = new Player('John');
 			const expectedResult = {
-				name: 'John'
+				name: 'John',
+				points: 0
 			};
 
 			expect(player).toEqual(expectedResult);

@@ -60,8 +60,6 @@ export class Game {
 					randomPlayer = teamBPlayers[Math.floor(Math.random() * teamBPlayers.length)];
 				}
 
-				randomPlayer.points += randomPoints;
-
 				if (randomPlayer) {
 					console.log(
 						`Player ${randomPlayer.getName()} from ${randomTeam.getTeamName()} scored ${randomPoints} point(s).`
