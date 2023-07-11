@@ -1,3 +1,38 @@
+![example workflow](https://github.com/thejuanandonly99/test/actions/workflows/main.yml/badge.svg)
+
+## Getting Started
+
+To get started, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/TheJuanAndOnly99/test.git
+```
+
+2. Install the dependencies:
+
+```
+cd test
+npm install
+```
+
+3. Run the app:
+
+```
+npm run start
+```
+
+4. Run the tests:
+
+``` 
+npm run test
+```
+
+## About 
+
+This repository implements the following technical test specifications:
+
 Technical Test
 
 Apply TypeScript and testing to the technical test.
