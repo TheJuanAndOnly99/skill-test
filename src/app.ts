@@ -37,5 +37,8 @@ const game = new Game(teamA, teamB);
 
 (async () => {
 	const finalScore = await game.play();
-	console.log('Final Score:', finalScore);
+
+	const winner = game.getWinner();
+
+	console.log(`The winner is ${winner}, Final Score: Team A - ${finalScore} - Team B.`);
 })();
