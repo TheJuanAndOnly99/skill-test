@@ -60,6 +60,8 @@ export class Game {
 					randomPlayer = teamBPlayers[Math.floor(Math.random() * teamBPlayers.length)];
 				}
 
+				randomPlayer.points += randomPoints;
+
 				if (randomPlayer) {
 					console.log(
 						`Player ${randomPlayer.getName()} from ${randomTeam.getTeamName()} scored ${randomPoints} point(s).`
@@ -74,9 +76,21 @@ export class Game {
 	async play(): Promise<string> {
 		for (let i = 0; i < 10; i++) {
 			await this.getShot();
-			console.log(this.scoreKeeper.getScore());
+			console.log(`The score is: Team A - ${this.scoreKeeper.getScore()} - Team B`);
 		}
 
 		return this.scoreKeeper.getScore();
+	}
+
+	getWinner() {
+		if (this.scoreKeeper.scoreTeamA > this.scoreKeeper.scoreTeamB) {
+			return this.teamA.name;
+		}
+		else if (this.scoreKeeper.scoreTeamA < this.scoreKeeper.scoreTeamB) {
+			return this.teamB.name;
+		}
+		else {
+			return null;
+		}
 	}
 }
